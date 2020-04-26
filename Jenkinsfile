@@ -8,7 +8,7 @@ pipeline{
 	    }
 	    stage("second step"){
 		steps{
-		    echo "f**k off !!!!"
+		    echo "f**k off !21!!!"
 		     }
 	    }
 	    stage("cleanup"){
