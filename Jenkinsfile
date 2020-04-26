@@ -13,7 +13,7 @@ pipeline{
 	    }
 	    stage("cleanup"){
 		    steps{
-		        echo "cleaning up working space"
+		        echo "cleaning up working space!!"
 			deleteDir()   
 		    }
 	    }
