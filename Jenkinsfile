@@ -4,6 +4,7 @@ pipeline{
 	    stage("build"){
 		steps{
 	            echo "Hello ${params.org}"
+		    sh "aws ssm send-command --targets "Key=tag:${params.keyname},Values=${params.value}" --document-name "{params.documentname}" --profile ${params.env}"
 		      }
 	    }    
             stage("cleanup"){
