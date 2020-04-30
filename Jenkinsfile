@@ -24,7 +24,7 @@ pipeline{
                     region: "${params.awsRegion}"
 	        ) {
 	            script {
-			    sh "aws ssm send-command --document-name ${params.documentname} --targets Key=tag:${params.keyname},Values=${params.value}"
+			    sh "aws ssm send-command --document-name ${params.documentname} --targets Key=tag:${params.keyname},Values=${params.values}"
 		     }
 			   
 		   } 
