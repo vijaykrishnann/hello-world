@@ -8,7 +8,7 @@ pipeline{
 		string(name: 'keyname', value: 'Key=tag:Name'),
 		string(name: 'values', value: 'Values=Terraform'),
 		string(name: 'documentname', value: 'terraform'),
-		string(name: 'env', value: 'prod')
+		string(name: 'awscredentialsId', value: 'aws_automation')
 	        ])
 	    }  
 	}
