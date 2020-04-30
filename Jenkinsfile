@@ -20,7 +20,7 @@ pipeline{
 	    steps{
 	        sh 'echo "Building new instance"'
 		withAWS(
-		    credentials: "${params.awsCredentialsId}",
+		    credentials: "${params.awscredentialsId}",
                     region: "${params.awsRegion}"
 	        ) {
 	            script {
