@@ -4,7 +4,7 @@ pipeline{
 	stage("build"){
 	    steps{
 	        build(job: "abc", parameters:[
-		string(name: 'org', value: 'Infy'),
+		string(name: 'org', value: 'New'),
 		string(name: 'keyname', value: 'Name'),
 		string(name: 'values', value: 'Terraform'),
 		string(name: 'documentname', value: 'terraform'),
